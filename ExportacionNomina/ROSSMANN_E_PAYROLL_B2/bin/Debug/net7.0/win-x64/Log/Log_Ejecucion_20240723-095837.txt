@@ -1,0 +1,13 @@
+﻿2024-07-23 09:58:41,029 INFO  - [23/07/2024 9:58:37]
+2024-07-23 09:58:41,037 INFO  - ***********************************************************************************
+2024-07-23 09:58:41,038 INFO  - ***********************************************************************************
+2024-07-23 09:58:41,038 INFO  - *********** INICIANDO EL PROCESO DE EXPORTACION DE GASTOS ***********
+2024-07-23 09:58:41,038 INFO  - ******** Inicio del proceso  : 23/07/2024 9:58:37 ********
+2024-07-23 09:58:41,039 INFO  - ***********************************************************************************
+2024-07-23 09:58:41,041 INFO  - Inicio del proceso de Generación del fichero Contabilidad de ROSSMANN : 23/07/2024 9:58:41
+2024-07-23 09:58:41,043 INFO  - Fecha incicio de los Reports a procesar aprobados : 01/03/2024 15:58:48  [2024-03-01T15:58:48.00Z]
+2024-07-23 09:58:41,044 INFO  - Fecha final de los Reports a procesar aprobados : 23/07/2024 7:58:36  [2024-07-23T07:58:36.99Z]
+2024-07-23 09:58:48,188 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-07-23 09:58:48,188 INFO  - --> PROCESANDO REPORT : [1/5] : Informe prueba  [1161237]  [20240417-082404-158-62910]
+2024-07-23 09:59:13,185 INFO  - --> PROCESANDO REPORT : [2/5] : Informe Prueba Rossmann  [1228487]  [20240528-063650-671-71315]
+2024-07-23 09:59:31,267 INFO  - --> PROCESANDO REPORT : [3/5] : Informe Prueba Rossmann Dos  [1229738]  [20240528-160534-942-54250]

@@ -1,0 +1,21 @@
+﻿2024-05-28 18:22:20,954 INFO  - [5/28/2024 6:22:07 PM]
+2024-05-28 18:22:20,972 INFO  - ***********************************************************************************
+2024-05-28 18:22:20,972 INFO  - ***********************************************************************************
+2024-05-28 18:22:20,972 INFO  - *********** INICIANDO EL PROCESO DE EXPORTACION DE GASTOS ***********
+2024-05-28 18:22:20,973 INFO  - ******** Inicio del proceso  : 5/28/2024 6:22:07 PM ********
+2024-05-28 18:22:20,973 INFO  - ***********************************************************************************
+2024-05-28 18:22:20,978 INFO  - Inicio del proceso de Generación del fichero Contabilidad de ROSSMANN : 5/28/2024 6:22:20 PM
+2024-05-28 18:22:21,010 INFO  - Fecha incicio de los Reports a procesar aprobados : 3/1/2024 3:58:48 PM  [2024-03-01T15:58:48.00Z]
+2024-05-28 18:22:21,010 INFO  - Fecha final de los Reports a procesar aprobados : 5/28/2024 4:22:06 PM  [2024-05-28T16:22:06.99Z]
+2024-05-28 18:22:22,486 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-05-28 18:22:22,488 INFO  - --> PROCESANDO REPORT : [1/1] : Informe prueba  [1161237]  [20240417-082404-158-62910]
+2024-05-28 18:22:26,394 INFO  -  --> Reports del usuario [test1@b2it.es] añadidos a los ficheros de exportación
+2024-05-28 18:22:27,570 INFO  - FICHERO XLSX GENERADO CORRECTAMENTE [.\Output\Sumar_20240301T155848-20240528T162206.xlsx]
+2024-05-28 18:22:27,572 INFO  - GENERADO FICHERO DE Contabilidad [.\Output\Sumar_20240301T155848-20240528T162206.csv]
+2024-05-28 18:22:27,617 INFO  - ***********************************************************************************************
+2024-05-28 18:22:27,617 INFO  - ******** Final del proceso : 5/28/2024 6:22:27 PM********
+2024-05-28 18:22:27,618 INFO  - ***** FINALIZADO CORRECTAMENTE EL PROCESO DE EXPORTACION DE CONTABILIDAD *****
+2024-05-28 18:22:27,618 INFO  - ***********************************************************************************************
+2024-05-28 18:22:27,619 INFO  - ************************************************************************************************
+
+

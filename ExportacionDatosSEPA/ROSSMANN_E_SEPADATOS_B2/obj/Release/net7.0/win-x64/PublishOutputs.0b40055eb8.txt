@@ -1,0 +1,5 @@
+C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionDatosSEPA\ROSSMANN_E_SEPADATOS_B2\bin\Debug\net7.0\publish\ROSSMANN_E_SEPADATOS_B2.pdb
+C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionDatosSEPA\ROSSMANN_E_SEPADATOS_B2\bin\Debug\net7.0\publish\log4net.config
+C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionDatosSEPA\ROSSMANN_E_SEPADATOS_B2\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionDatosSEPA\ROSSMANN_E_SEPADATOS_B2\bin\Debug\net7.0\publish\ROSSMANN_E_SEPADATOS_B2.dll.config
+C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionDatosSEPA\ROSSMANN_E_SEPADATOS_B2\bin\Debug\net7.0\publish\ROSSMANN_E_SEPADATOS_B2.exe

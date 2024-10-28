@@ -1,0 +1,111 @@
+﻿
+namespace CaptioB2it.Ficheros
+{
+
+    public class FicheroExportacionDTO
+    {
+        public string Empresa { get; set; }
+        public string Campo_1 { get; set; }
+        public string Campo_2 { get; set; }
+        public string Campo_3 { get; set; }
+        public string Campo_4 { get; set; }
+        public string Campo_5 { get; set; }
+        public string Campo_6 { get; set; }
+        public string Campo_7 { get; set; }
+        public string Campo_8 { get; set; }
+        public string Campo_9 { get; set; }
+        public string Campo_10 { get; set; }
+        public string Campo_11 { get; set; }
+        public string Campo_12 { get; set; }
+        public string Campo_13 { get; set; }
+        public string Campo_14 { get; set; }
+        public string Campo_15 { get; set; }
+        public string Campo_16 { get; set; }
+        public string Campo_17 { get; set; }
+        public string Campo_18 { get; set; }
+        public string Campo_19 { get; set; }
+        public string Campo_20 { get; set; }
+        public string Campo_21 { get; set; }
+        public string Campo_22 { get; set; }
+        public string Campo_23 { get; set; }
+        public string Campo_24 { get; set; }
+        public string Campo_25 { get; set; }
+        public string Campo_26 { get; set; }
+        public string Campo_27 { get; set; }
+        public string Campo_28 { get; set; }
+        public string Campo_29 { get; set; }
+        public string Campo_30 { get; set; }
+        public string Campo_31 { get; set; }
+        public string Campo_32 { get; set; }
+        public string Campo_33 { get; set; }
+        public string Campo_34 { get; set; }
+        public string Campo_35 { get; set; }
+        public string Campo_36 { get; set; }
+        public string Campo_37 { get; set; }
+        public string Campo_38 { get; set; }
+        public string Campo_39 { get; set; }
+        public string Campo_40 { get; set; }
+        public string Campo_41 { get; set; }
+        public string Campo_42 { get; set; }
+        public string Campo_43 { get; set; }
+        public string Campo_44 { get; set; }
+        public string Campo_45 { get; set; }
+        public string Campo_46 { get; set; }
+        public string Campo_47 { get; set; }
+        public string Campo_48 { get; set; }
+        public string Campo_49 { get; set; }
+        public string Campo_50 { get; set; }
+        public string Campo_51 { get; set; }
+        public string Campo_52 { get; set; }
+        public string Campo_53 { get; set; }
+        public string Campo_54 { get; set; }
+        public string Campo_55 { get; set; }
+        public string Campo_56 { get; set; }
+        public string Campo_57 { get; set; }
+        public string Campo_58 { get; set; }
+        public string Campo_59 { get; set; }
+        public string Campo_60 { get; set; }
+        public string Campo_61 { get; set; }
+        public string Campo_62 { get; set; }
+        public string Campo_63 { get; set; }
+        public string Campo_64 { get; set; }
+        public string Campo_65 { get; set; }
+        public string Campo_66 { get; set; }
+        public string Campo_67 { get; set; }
+        public string Campo_68 { get; set; }
+        public string Campo_69 { get; set; }
+        public string Campo_70 { get; set; }
+        public string Campo_71 { get; set; }
+        public string Campo_72 { get; set; }
+        public string Campo_73 { get; set; }
+        public string Campo_74 { get; set; }
+        public string Campo_75 { get; set; }
+        public string Campo_76 { get; set; }
+        public string Campo_77 { get; set; }
+        public string Campo_78 { get; set; }
+        public string Campo_79 { get; set; }
+        public string Campo_80 { get; set; }
+        public string Campo_81 { get; set; }
+        public string Campo_82 { get; set; }
+        public string Campo_83 { get; set; }
+        public string Campo_84 { get; set; }
+        public string Campo_85 { get; set; }
+        public string Campo_86 { get; set; }
+        public string Campo_87 { get; set; }
+        public string Campo_88 { get; set; }
+        public string Campo_89 { get; set; }
+        public string Campo_90 { get; set; }
+        public string Campo_91 { get; set; }
+        public string Campo_92 { get; set; }
+        public string Campo_93 { get; set; }
+        public string Campo_94 { get; set; }
+        public string Campo_95 { get; set; }
+        public string Campo_96 { get; set; }
+        public string Campo_97 { get; set; }
+        public string Campo_98 { get; set; }
+        public string Campo_99 { get; set; }
+        public int NumeroColumnes { get; set; }
+    }
+
+
+}

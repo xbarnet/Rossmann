@@ -1,0 +1,23 @@
+﻿2024-07-26 10:23:52,803 INFO  - [26/07/2024 10:23:27]
+2024-07-26 10:23:52,815 INFO  - ***********************************************************************************
+2024-07-26 10:23:52,822 INFO  - ***********************************************************************************
+2024-07-26 10:23:52,823 INFO  - *********** INICIANDO EL PROCESO DE EXPORTACION DE GASTOS ***********
+2024-07-26 10:23:52,823 INFO  - ******** Inicio del proceso  : 26/07/2024 10:23:27 ********
+2024-07-26 10:23:52,823 INFO  - ***********************************************************************************
+2024-07-26 10:23:52,825 INFO  - Inicio del proceso de Generación del fichero Contabilidad de ROSSMANN : 26/07/2024 10:23:52
+2024-07-26 10:23:52,840 INFO  - Fecha incicio de los Reports a procesar aprobados : 25/07/2024 16:30:46  [2024-07-25T16:30:46.00Z]
+2024-07-26 10:23:52,844 INFO  - Fecha final de los Reports a procesar aprobados : 26/07/2024 8:23:26  [2024-07-26T08:23:26.99Z]
+2024-07-26 10:24:01,854 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-07-26 10:24:01,855 INFO  - --> PROCESANDO REPORT : [1/3] : Informe prueba  [1161237]  [20240417-082404-158-62910]
+2024-07-26 10:24:41,854 INFO  - --> PROCESANDO REPORT : [2/3] : Informe Prueba Rossmann  [1228487]  [20240528-063650-671-71315]
+2024-07-26 10:25:09,172 INFO  - --> PROCESANDO REPORT : [3/3] : Informe Prueba Rossmann Dos  [1229738]  [20240528-160534-942-54250]
+2024-07-26 10:25:55,067 INFO  -  --> Reports del usuario [test1@b2it.es] añadidos a los ficheros de exportación
+2024-07-26 10:25:55,861 INFO  - FICHERO XLSX GENERADO CORRECTAMENTE [.\Output\Sumar_20240725T163046-20240726T082326.xlsx]
+2024-07-26 10:25:55,863 INFO  - GENERADO FICHERO DE Contabilidad [.\Output\Sumar_20240725T163046-20240726T082326.csv]
+2024-07-26 10:25:55,887 INFO  - ***********************************************************************************************
+2024-07-26 10:25:55,888 INFO  - ******** Final del proceso : 26/07/2024 10:25:55********
+2024-07-26 10:25:55,888 INFO  - ***** FINALIZADO CORRECTAMENTE EL PROCESO DE EXPORTACION DE CONTABILIDAD *****
+2024-07-26 10:25:55,888 INFO  - ***********************************************************************************************
+2024-07-26 10:25:55,888 INFO  - ************************************************************************************************
+
+

@@ -1,0 +1,22 @@
+﻿2024-07-25 18:31:54,715 INFO  - [25/07/2024 18:31:40]
+2024-07-25 18:31:54,748 INFO  - ***********************************************************************************
+2024-07-25 18:31:54,750 INFO  - ***********************************************************************************
+2024-07-25 18:31:54,755 INFO  - *********** INICIANDO EL PROCESO DE EXPORTACION DE GASTOS ***********
+2024-07-25 18:31:54,756 INFO  - ******** Inicio del proceso  : 25/07/2024 18:31:40 ********
+2024-07-25 18:31:54,757 INFO  - ***********************************************************************************
+2024-07-25 18:31:54,762 INFO  - Inicio del proceso de Generación del fichero Contabilidad de ROSSMANN : 25/07/2024 18:31:54
+2024-07-25 18:31:54,773 INFO  - Fecha incicio de los Reports a procesar aprobados : 01/03/2024 15:58:48  [2024-03-01T15:58:48.00Z]
+2024-07-25 18:31:54,774 INFO  - Fecha final de los Reports a procesar aprobados : 25/07/2024 16:31:39  [2024-07-25T16:31:39.99Z]
+2024-07-25 18:32:05,809 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-07-25 18:32:50,747 INFO  -  --> Report 20240417-082404-158-62910 del usuario [test1@b2it.es] añadido al fichero de exportación
+2024-07-25 18:32:50,748 INFO  -  --> Report 20240528-063650-671-71315 del usuario [test1@b2it.es] añadido al fichero de exportación
+2024-07-25 18:32:50,748 INFO  -  --> Report 20240528-160534-942-54250 del usuario [test1@b2it.es] añadido al fichero de exportación
+2024-07-25 18:32:51,830 INFO  - FICHERO XLSX GENERADO CORRECTAMENTE [.\Output\DatosSepa_20240301T155848-20240725T163139.xlsx]
+2024-07-25 18:32:51,833 INFO  - GENERADO FICHERO DE Contabilidad [.\Output\DatosSepa_20240301T155848-20240725T163139.csv]
+2024-07-25 18:32:51,891 INFO  - ***********************************************************************************************
+2024-07-25 18:32:51,891 INFO  - ******** Final del proceso : 25/07/2024 18:32:51********
+2024-07-25 18:32:51,892 INFO  - ***** FINALIZADO CORRECTAMENTE EL PROCESO DE EXPORTACION DE CONTABILIDAD *****
+2024-07-25 18:32:51,892 INFO  - ***********************************************************************************************
+2024-07-25 18:32:51,892 INFO  - ************************************************************************************************
+
+

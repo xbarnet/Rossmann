@@ -1,0 +1,27 @@
+﻿2024-07-31 13:24:47,768 INFO  - [7/31/2024 1:24:34 PM]
+2024-07-31 13:24:47,788 INFO  - ***********************************************************************************
+2024-07-31 13:24:47,791 INFO  - ***********************************************************************************
+2024-07-31 13:24:47,792 INFO  - *********** INICIANDO EL PROCESO DE EXPORTACION DE GASTOS ***********
+2024-07-31 13:24:47,792 INFO  - ******** Inicio del proceso  : 7/31/2024 1:24:34 PM ********
+2024-07-31 13:24:47,792 INFO  - ***********************************************************************************
+2024-07-31 13:24:47,795 INFO  - Inicio del proceso de Generación del fichero Contabilidad de ROSSMANN : 7/31/2024 1:24:47 PM
+2024-07-31 13:24:47,817 INFO  - Fecha incicio de los Reports a procesar aprobados : 3/1/2024 3:58:48 PM  [2024-03-01T15:58:48.00Z]
+2024-07-31 13:24:47,817 INFO  - Fecha final de los Reports a procesar aprobados : 7/31/2024 11:24:33 AM  [2024-07-31T11:24:33.99Z]
+2024-07-31 13:24:54,967 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-07-31 13:24:54,968 INFO  - --> PROCESANDO REPORT : [1/5] : Informe prueba  [1161237]  [20240417-082404-158-62910]
+2024-07-31 13:24:57,968 INFO  - --> PROCESANDO REPORT : [2/5] : Informe Prueba Rossmann  [1228487]  [20240528-063650-671-71315]
+2024-07-31 13:24:58,348 INFO  - --> PROCESANDO REPORT : [3/5] : Informe Prueba Rossmann Dos  [1229738]  [20240528-160534-942-54250]
+2024-07-31 13:25:07,451 INFO  -  --> Reports del usuario [test1@b2it.es] añadidos a los ficheros de exportación
+2024-07-31 13:25:07,452 INFO  - PROCESANDO REPORTS DEL USUARIO : [raul.marco@rossmann.es] - [Raúl Marco Soler]
+2024-07-31 13:25:07,455 INFO  - --> PROCESANDO REPORT : [4/5] : Mayo 2024 Raúl Marco  [1185950]  [20240501-220723-795-04992]
+2024-07-31 13:25:12,028 INFO  - --> PROCESANDO REPORT : [5/5] : Junio Raúl Marco 2024  [1218956]  [20240521-123029-056-56935]
+2024-07-31 13:25:20,895 INFO  -  --> Reports del usuario [raul.marco@rossmann.es] añadidos a los ficheros de exportación
+2024-07-31 13:25:22,716 INFO  - FICHERO XLSX GENERADO CORRECTAMENTE [.\Output\Sumar_20240301T155848-20240731T112433.xlsx]
+2024-07-31 13:25:22,717 INFO  - GENERADO FICHERO DE Contabilidad [.\Output\Sumar_20240301T155848-20240731T112433.csv]
+2024-07-31 13:25:22,773 INFO  - ***********************************************************************************************
+2024-07-31 13:25:22,786 INFO  - ******** Final del proceso : 7/31/2024 1:25:22 PM********
+2024-07-31 13:25:22,788 INFO  - ***** FINALIZADO CORRECTAMENTE EL PROCESO DE EXPORTACION DE CONTABILIDAD *****
+2024-07-31 13:25:22,792 INFO  - ***********************************************************************************************
+2024-07-31 13:25:22,796 INFO  - ************************************************************************************************
+
+

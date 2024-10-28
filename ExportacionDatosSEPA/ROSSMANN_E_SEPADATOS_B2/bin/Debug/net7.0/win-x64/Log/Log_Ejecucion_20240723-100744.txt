@@ -1,0 +1,25 @@
+﻿2024-07-23 10:07:54,975 INFO  - [23/07/2024 10:07:44]
+2024-07-23 10:07:54,993 INFO  - ***********************************************************************************
+2024-07-23 10:07:54,993 INFO  - ***********************************************************************************
+2024-07-23 10:07:54,994 INFO  - *********** INICIANDO EL PROCESO DE EXPORTACION DE GASTOS ***********
+2024-07-23 10:07:54,994 INFO  - ******** Inicio del proceso  : 23/07/2024 10:07:44 ********
+2024-07-23 10:07:54,994 INFO  - ***********************************************************************************
+2024-07-23 10:07:54,996 INFO  - Inicio del proceso de Generación del fichero Contabilidad de ROSSMANN : 23/07/2024 10:07:54
+2024-07-23 10:07:55,000 INFO  - Fecha incicio de los Reports a procesar aprobados : 01/03/2024 15:58:48  [2024-03-01T15:58:48.00Z]
+2024-07-23 10:07:55,000 INFO  - Fecha final de los Reports a procesar aprobados : 23/07/2024 8:07:43  [2024-07-23T08:07:43.99Z]
+2024-07-23 10:08:07,831 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-07-23 10:08:07,835 INFO  -  --> Report 20240417-082404-158-62910 del usuario [test1@b2it.es] añadido al fichero de exportación
+2024-07-23 10:08:07,835 INFO  -  --> Report 20240528-063650-671-71315 del usuario [test1@b2it.es] añadido al fichero de exportación
+2024-07-23 10:08:07,836 INFO  -  --> Report 20240528-160534-942-54250 del usuario [test1@b2it.es] añadido al fichero de exportación
+2024-07-23 10:08:07,836 INFO  - PROCESANDO REPORTS DEL USUARIO : [raul.marco@rossmann.es] - [Raúl Marco Soler]
+2024-07-23 10:08:07,836 INFO  -  --> Report 20240501-220723-795-04992 del usuario [raul.marco@rossmann.es] añadido al fichero de exportación
+2024-07-23 10:08:07,836 INFO  -  --> Report 20240521-123029-056-56935 del usuario [raul.marco@rossmann.es] añadido al fichero de exportación
+2024-07-23 10:08:08,712 INFO  - FICHERO XLSX GENERADO CORRECTAMENTE [.\Output\DatosSepa_20240301T155848-20240723T080743.xlsx]
+2024-07-23 10:08:08,714 INFO  - GENERADO FICHERO DE Contabilidad [.\Output\DatosSepa_20240301T155848-20240723T080743.csv]
+2024-07-23 10:08:08,751 INFO  - ***********************************************************************************************
+2024-07-23 10:08:08,751 INFO  - ******** Final del proceso : 23/07/2024 10:08:08********
+2024-07-23 10:08:08,752 INFO  - ***** FINALIZADO CORRECTAMENTE EL PROCESO DE EXPORTACION DE CONTABILIDAD *****
+2024-07-23 10:08:08,752 INFO  - ***********************************************************************************************
+2024-07-23 10:08:08,753 INFO  - ************************************************************************************************
+
+
