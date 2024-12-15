@@ -1,6 +1,6 @@
 ﻿using CaptioB2it.Entidades;
 using CaptioB2it.Ficheros;
-using OfficeOpenXml.Drawing.Slicer.Style;
+//using OfficeOpenXml.Drawing.Slicer.Style;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

@@ -121,7 +121,7 @@ namespace CaptioB2it.Utilidades
         // Rutina para convertir ficheros CSV a XLSX
         public void ConvertCSV_to_XLSX(string NomFitxerSenseExtensio, string Extensio, string Directori, bool BorrarFitxerCSV)
         {
-            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            //ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             try
             {
                 string fitxer = Directori + "\\" + NomFitxerSenseExtensio + Extensio;

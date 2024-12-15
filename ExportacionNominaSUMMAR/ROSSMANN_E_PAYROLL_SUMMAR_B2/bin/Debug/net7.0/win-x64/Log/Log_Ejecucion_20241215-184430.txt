@@ -1,0 +1,25 @@
+﻿2024-12-15 18:44:32,118 INFO  - [12/15/2024 6:44:30 PM]
+2024-12-15 18:44:32,133 INFO  - ***********************************************************************************
+2024-12-15 18:44:32,133 INFO  - ***********************************************************************************
+2024-12-15 18:44:32,133 INFO  - *********** INICIANDO EL PROCESO DE EXPORTACION DE GASTOS ***********
+2024-12-15 18:44:32,134 INFO  - ******** Inicio del proceso  : 12/15/2024 6:44:30 PM ********
+2024-12-15 18:44:32,134 INFO  - ***********************************************************************************
+2024-12-15 18:44:33,610 INFO  - Inicio del proceso de Actualización del fichero de SUMMAR de ROSSMANN : 12/15/2024 6:44:33 PM
+2024-12-15 18:44:33,621 INFO  - Fecha incicio de los Reports a procesar aprobados : 1/1/2024 3:58:48 PM  [2024-01-01T15:58:48.00Z]
+2024-12-15 18:44:33,621 INFO  - Fecha final de los Reports a procesar aprobados : 12/15/2024 5:44:29 PM  [2024-12-15T17:44:29.99Z]
+2024-12-15 18:44:34,555 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-12-15 18:44:34,555 INFO  - --> PROCESANDO REPORT : [1/5] : Informe prueba  [1161237]  [20240417-082404-158-62910]
+2024-12-15 18:44:34,949 INFO  - --> PROCESANDO REPORT : [2/5] : Informe Prueba Rossmann  [1228487]  [20240528-063650-671-71315]
+2024-12-15 18:44:35,332 INFO  - --> PROCESANDO REPORT : [3/5] : Informe Prueba Rossmann Dos  [1229738]  [20240528-160534-942-54250]
+2024-12-15 18:44:35,701 INFO  -  --> Reports del usuario [test1@b2it.es] añadidos a los ficheros de exportación
+2024-12-15 18:44:35,701 INFO  - PROCESANDO REPORTS DEL USUARIO : [raul.marco@rossmann.es] - [Raúl Marco Soler]
+2024-12-15 18:44:35,702 INFO  - --> PROCESANDO REPORT : [4/5] : Mayo 2024 Raúl Marco  [1185950]  [20240501-220723-795-04992]
+2024-12-15 18:44:36,224 INFO  - --> PROCESANDO REPORT : [5/5] : Junio Raúl Marco 2024  [1218956]  [20240521-123029-056-56935]
+2024-12-15 18:44:36,714 INFO  -  --> Reports del usuario [raul.marco@rossmann.es] añadidos a los ficheros de exportación
+2024-12-15 18:44:46,410 INFO  - ***********************************************************************************************
+2024-12-15 18:44:46,411 INFO  - ******** Final del proceso : 12/15/2024 6:44:46 PM********
+2024-12-15 18:44:46,412 INFO  - ***** FINALIZADO CORRECTAMENTE EL PROCESO DE EXPORTACION DE CONTABILIDAD *****
+2024-12-15 18:44:46,412 INFO  - ***********************************************************************************************
+2024-12-15 18:44:46,412 INFO  - ************************************************************************************************
+
+

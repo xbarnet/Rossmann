@@ -12,6 +12,9 @@ using GestionAppConfig = CaptioB2it.Utilidades.GestionAppConfig;
 using Newtonsoft.Json;
 using System.Linq;
 using System.Threading.Tasks;
+using OfficeOpenXml;
+using System.Runtime;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 
 
 namespace E_ACCOUNT_B2
@@ -66,6 +69,10 @@ namespace E_ACCOUNT_B2
             if (!Path.Exists(program.appSettings.DirectorioFicherosSalida))
             {
                 Directory.CreateDirectory(program.appSettings.DirectorioFicherosSalida);
+            }
+            if (!Path.Exists(program.appSettings.DirectorioFicherosProcesados))
+            {
+                Directory.CreateDirectory(program.appSettings.DirectorioFicherosProcesados);
             }
 
             // Configuració fitxer de logs
@@ -293,8 +300,19 @@ namespace E_ACCOUNT_B2
         {
             bool error = false;
 
+            //// BORRAR XAVIER
+            //var fi = new FileInfo(@"C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Input\202412_Prueba Captio.xlsx");
+            //using (var package = new ExcelPackage(fi))
+            //{
+            //    var aa = package.Workbook.Worksheets;
+            //    var ws = package.Workbook.Worksheets[0];
+            //    var value = ws.Cells["A1"].Value;
+            //    Console.WriteLine(value);
+            //}
+            //// FI BORRAR XAVIER
+
             // Log
-            Log.Info("Inicio del proceso de Generación del fichero Contabilidad de " + CaptioCustomerKey_v3 + " : " + DateTime.Now.ToString());
+            Log.Info("Inicio del proceso de Actualización del fichero de SUMMAR de " + CaptioCustomerKey_v3 + " : " + DateTime.Now.ToString());
 
             // Calculamos la fecha de inicio y final de los informes a seleccionar
             CalcularFechasInicioFin();
@@ -348,7 +366,10 @@ namespace E_ACCOUNT_B2
             };
             exportDATA.AddRange(ProcessReports(fechaInicioExport_txt, fechaFinExport_txt, ref usersCaptio, categoriesCaptio, ref reportsProcessats));
 
-            string nombreFichero = "";
+
+            string nombreFichero_salida = "";
+
+
             //System.Text.Encoding codificacion = System.Text.Encoding.GetEncoding("iso-8859-1");
             // System.Text.Encoding.GetEncoding(1252)
             System.Text.Encoding codificacion = System.Text.Encoding.UTF8;
@@ -358,35 +379,41 @@ namespace E_ACCOUNT_B2
             {
                 try
                 {
-                    // Guardem Fitxer generat
-                    nombreFichero = appSettings.NombreFicheroExportacion_Contabilidad + fechaInicioExport.ToString("yyyyMMddTHHmmss") + "-" + fechaFinExport.ToString("yyyyMMddTHHmmss") + ".csv";
-
-                    //// 
-                    //File.WriteAllLines(Path.Combine(appSettings.DirectorioFicherosGenerados, nombreFichero), utils_camps.ConvertirEstructuraContableDTO_To_String(exportDATA, appSettings.SeparadorCSV, UtilesGenericas.CalcularNumeroColumnes(exportDATA)), codificacion);
-                    //utils_fitxers.ConvertCSV_to_XLSX(Path.GetFileNameWithoutExtension(nombreFichero), Path.GetExtension(nombreFichero), appSettings.DirectorioFicherosGenerados);
-
-                    // Generem el fitxer sense la última línea
-                    string[] aaa = utils_camps.ConvertirEstructuraContableDTO_To_String(exportDATA, appSettings.SeparadorCSV, UtilesGenericas.CalcularNumeroColumnes(exportDATA));
-                    string bbb = "";
-                    for (int i = 0; i < aaa.Length;  i++)
+                    // Processem tots els fitxers pendents del directori
+                    DirectoryInfo dirinfo = new DirectoryInfo(appSettings.DirectorioFicherosEntrada);
+                    foreach (var fitxer in dirinfo.GetFiles())
                     {
-                        // "\r\n"
-                        bbb = bbb + aaa[i];
-                        if ((i + 1) < aaa.Length)
-                        {
-                            bbb = bbb + "\r\n";
-                        }
+                        string nomFitxerExcel = fitxer.FullName;
+                        nombreFichero_salida = Path.Combine(appSettings.DirectorioFicherosSalida, fitxer.Name + "_" + fechaInicioExport.ToString("yyyyMMddTHHmmss") + "-" + fechaFinExport.ToString("yyyyMMddTHHmmss")) + "." + fitxer.Extension;
+                        ProcesarFichero_SUMMAR(nomFitxerExcel, nombreFichero_salida, appSettings.DirectorioFicherosProcesados, exportDATA, fechaInicioExport.ToString("dd/MM/yyyy"), fechaFinExport.ToString("dd/MM/yyyy"));
                     }
-                    File.WriteAllText(Path.Combine(appSettings.DirectorioFicherosSalida, nombreFichero), bbb, codificacion);
-                    utils_fitxers.ConvertCSV_to_XLSX(Path.GetFileNameWithoutExtension(nombreFichero), Path.GetExtension(nombreFichero), appSettings.DirectorioFicherosSalida, true);
-                    
 
-                    // Log
-                    Log.Info("GENERADO FICHERO DE Contabilidad [" + Path.Combine(appSettings.DirectorioFicherosSalida, nombreFichero) + "]");
-                    if (exportDATA.Count == 1)
-                    {
-                        Log.Info("FICHERO SIN DATOS");
-                    }
+                    ////// 
+                    ////File.WriteAllLines(Path.Combine(appSettings.DirectorioFicherosGenerados, nombreFichero), utils_camps.ConvertirEstructuraContableDTO_To_String(exportDATA, appSettings.SeparadorCSV, UtilesGenericas.CalcularNumeroColumnes(exportDATA)), codificacion);
+                    ////utils_fitxers.ConvertCSV_to_XLSX(Path.GetFileNameWithoutExtension(nombreFichero), Path.GetExtension(nombreFichero), appSettings.DirectorioFicherosGenerados);
+
+                    //// Generem el fitxer sense la última línea
+                    //string[] aaa = utils_camps.ConvertirEstructuraContableDTO_To_String(exportDATA, appSettings.SeparadorCSV, UtilesGenericas.CalcularNumeroColumnes(exportDATA));
+                    //string bbb = "";
+                    //for (int i = 0; i < aaa.Length;  i++)
+                    //{
+                    //    // "\r\n"
+                    //    bbb = bbb + aaa[i];
+                    //    if ((i + 1) < aaa.Length)
+                    //    {
+                    //        bbb = bbb + "\r\n";
+                    //    }
+                    //}
+                    //File.WriteAllText(Path.Combine(appSettings.DirectorioFicherosSalida, nombreFichero), bbb, codificacion);
+                    //utils_fitxers.ConvertCSV_to_XLSX(Path.GetFileNameWithoutExtension(nombreFichero), Path.GetExtension(nombreFichero), appSettings.DirectorioFicherosSalida, true);
+
+
+                    //// Log
+                    //Log.Info("GENERADO FICHERO DE Contabilidad [" + Path.Combine(appSettings.DirectorioFicherosSalida, nombreFichero) + "]");
+                    //if (exportDATA.Count == 1)
+                    //{
+                    //    Log.Info("FICHERO SIN DATOS");
+                    //}
                 }
                 catch (Exception ex)
                 {
@@ -398,7 +425,7 @@ namespace E_ACCOUNT_B2
             }
             else
             {
-                Log.Info("Fichero de Contabilidad NO Generado.  Fichero sin datos.");
+                Log.Warn("FICHEROS NO ACTUALIZADOS.  INFORMES DE CAPTIO SIN DATOS PARA ACTUALIZAR.");
             }
 
 
@@ -908,6 +935,7 @@ namespace E_ACCOUNT_B2
 
             // Fecha fin
             fechaFinExport = fechaGeneracionUTC.AddSeconds(-1);
+            //fechaFinExport = new DateTime(fechaGeneracionUTC.Year, fechaGeneracionUTC.Month, fechaGeneracionUTC.Day - 1, 23, 59, 59);
 
             //// BORRAR XAVIER
             //fechaInicioExport = new DateTime(2024, 02, 06, 11, 58, 52);
@@ -1083,6 +1111,198 @@ namespace E_ACCOUNT_B2
 
             return (result);
         }
+
+
+        private bool ProcesarFichero_SUMMAR(string ficheroInicial, string ficheroFinal, string directorioProcesados, List<FicheroExportacionDTO> datosCaptio, string fechaInicial, string fechaFinal)
+        {
+            bool error = false;
+            var fi = new FileInfo(ficheroInicial);
+            using (var package = new ExcelPackage(fi))
+            {
+                var ws = package.Workbook.Worksheets[0];
+                
+                int fila_codigoUsuarioSummar = 0;
+                int columna_codigoUsuarioSummar = 0;
+                if (!BuscarTexto_HojaExcel("Código", ws, ref fila_codigoUsuarioSummar, ref columna_codigoUsuarioSummar))
+                {
+                    // Log
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Código]");
+                    error = true;
+                    return (error);
+                }
+
+                int fila_nombreUsuarioSummar = 0;
+                int columna_nombreUsuarioSummar = 0;
+                if (!BuscarTexto_HojaExcel("Nombre", ws, ref fila_nombreUsuarioSummar, ref columna_nombreUsuarioSummar))
+                {
+                    // Log
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Nombre]");
+                    error = true;
+                    return (error);
+                }
+
+                int fila_fechaInicial = 0;
+                int columna_fechaInicial = 0;
+                if (!BuscarTexto_HojaExcel("Fecha inicial", ws, ref fila_fechaInicial, ref columna_fechaInicial))
+                {
+                    // Log
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha inicial]");
+                    error = true;
+                    return (error);
+                }
+
+                int fila_fechaFinal = 0;
+                int columna_fechaFinal = 0;
+                if (!BuscarTexto_HojaExcel("Fecha final", ws, ref fila_fechaFinal, ref columna_fechaFinal))
+                {
+                    // Log
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha final]");
+                    error = true;
+                    return (error);
+                }
+
+                int fila_dietaForzada = 0;
+                int columna_dietaForzada = 0;
+                int fila_aux = 0;
+                int columna_aux = 0;
+                if (!((BuscarTexto_HojaExcel("K253", ws, ref fila_aux, ref columna_aux)) && ((BuscarTexto_HojaExcel("DIETA FORZADA", ws, ref fila_dietaForzada, ref columna_dietaForzada)) && (fila_dietaForzada == (fila_aux+1)) && (columna_dietaForzada == columna_aux))))
+                {
+                    // Log
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K253 - DIETA FORZADA]");
+                    error = true;
+                    return (error);
+                }
+
+                int fila_numKilometros = 0;
+                int columna_numKilometros = 0;
+                fila_aux = 0;
+                columna_aux = 0;
+                if (!((BuscarTexto_HojaExcel("K270", ws, ref fila_aux, ref columna_aux)) && ((BuscarTexto_HojaExcel("Nº KILOMETROS", ws, ref fila_numKilometros, ref columna_numKilometros)) && (fila_numKilometros == (fila_aux + 1)) && (columna_numKilometros == columna_aux))))
+                {
+                    // Log
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K270 - Nº KILOMETROS]");
+                    error = true;
+                    return (error);
+                }
+
+                int fila_importeGastosEmpresa = 0;
+                int columna_importeGastosEmpresa = 0;
+                fila_aux = 0;
+                columna_aux = 0;
+                if (!((BuscarTexto_HojaExcel("K888", ws, ref fila_aux, ref columna_aux)) && ((BuscarTexto_HojaExcel("IMPORTE GASTOS DE EMPRESA", ws, ref fila_importeGastosEmpresa, ref columna_importeGastosEmpresa)) && (fila_importeGastosEmpresa == (fila_aux + 1)) && (columna_importeGastosEmpresa == columna_aux))))
+                {
+                    // Log
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K888 - IMPORTE GASTOS DE EMPRESA]");
+                    error = true;
+                    return (error);
+                }
+
+
+                // Actualitzar les ddades del Excel
+                int fila = 0;
+                int columna = 0;
+                List<FicheroExportacionDTO> datos_x_usuario = new List<FicheroExportacionDTO>();
+                foreach (string codigo_Summar in (datosCaptio.Select(x => x.Campo_3).Distinct()))
+                {
+                    if (codigo_Summar.Equals("Código Usuario SUMMAR"))
+                    {
+                        continue;
+                    }
+                    datos_x_usuario.Clear();
+                    datos_x_usuario.AddRange(datosCaptio.FindAll(x => x.Campo_3.Equals(codigo_Summar)));
+                    fila = 0;
+                    columna = 0;
+                    if (BuscarTexto_HojaExcel(codigo_Summar, ws, ref fila, ref columna))
+                    {
+                        //
+                        // Actualitzar camps de la línea
+                        // Fecha inicial
+                        ws.Cells[fila, columna_fechaInicial].Value = fechaInicial;
+                        // Fecha final
+                        ws.Cells[fila, columna_fechaFinal].Value = fechaFinal;
+                        // K253 DIETA FORZADA
+                        string suma = utils_camps.CalcularSumaDecimalStrings(datos_x_usuario.FindAll(x => (x.Campo_11.Equals("K250") || x.Campo_11.Equals("K260"))).Select(v => v.Campo_9).ToList());
+                        ws.Cells[fila, columna_dietaForzada].Value = suma;
+                        // K270 Nº KILOMETROS
+                        suma = utils_camps.CalcularSumaDecimalStrings(datos_x_usuario.FindAll(x => x.Campo_11.Equals("K270")).Select(v => v.Campo_7).ToList());
+                        ws.Cells[fila, columna_numKilometros].Value = suma;
+                        // K888 IMPORTE GASTOS EMPRESA
+                        suma = utils_camps.CalcularSumaDecimalStrings(datos_x_usuario.FindAll(x => x.Campo_11.Equals("K888")).Select(v => v.Campo_9).ToList());
+                        ws.Cells[fila, columna_importeGastosEmpresa].Value = suma;
+                    }
+                    else
+                    {
+                        // Afegir una nova línea
+                        fila = ws.Dimension.End.Row + 1;
+                        ws.InsertRow(fila, 1);
+
+                        // Afegir dades de l'usuari
+                        ws.Cells[fila, columna_codigoUsuarioSummar].Value = datos_x_usuario.First().Campo_3;
+                        ws.Cells[fila, columna_nombreUsuarioSummar].Value = datos_x_usuario.First().Campo_2;
+
+                        // Fecha inicial
+                        ws.Cells[fila, columna_fechaInicial].Value = fechaInicial;
+                        // Fecha final
+                        ws.Cells[fila, columna_fechaFinal].Value = fechaFinal;
+                        // K253 DIETA FORZADA
+                        string suma = utils_camps.CalcularSumaDecimalStrings(datos_x_usuario.FindAll(x => (x.Campo_11.Equals("K250") || x.Campo_11.Equals("K260"))).Select(v => v.Campo_9).ToList());
+                        ws.Cells[fila, columna_dietaForzada].Value = suma;
+                        // K270 Nº KILOMETROS
+                        suma = utils_camps.CalcularSumaDecimalStrings(datos_x_usuario.FindAll(x => x.Campo_11.Equals("K270")).Select(v => v.Campo_7).ToList());
+                        ws.Cells[fila, columna_numKilometros].Value = suma;
+                        // K888 IMPORTE GASTOS EMPRESA
+                        suma = utils_camps.CalcularSumaDecimalStrings(datos_x_usuario.FindAll(x => x.Campo_11.Equals("K888")).Select(v => v.Campo_9).ToList());
+                        ws.Cells[fila, columna_importeGastosEmpresa].Value = suma;
+                    }
+                }
+
+                // Guardar el excel en el directori de sortida
+                if (File.Exists(ficheroFinal))
+                {
+                    File.Delete(ficheroFinal);
+                }
+                package.SaveAs(new FileInfo(ficheroFinal));
+
+                // Moure el fitxer processat a processats
+                if (File.Exists(ficheroFinal))
+                {
+                    File.Move(ficheroInicial, Path.Combine(directorioProcesados, Path.GetFileName(ficheroInicial)));
+                }
+            }
+
+            return (error);
+        }
+
+
+        private bool BuscarTexto_HojaExcel (string texto, ExcelWorksheet hoja, ref int fila, ref int column)
+        {
+            bool trobat = false;
+
+            for (int f = 1; f <= hoja.Dimension.End.Row; f++)
+            {
+                for (int c = 1; c <= hoja.Dimension.End.Column; c++)
+                {
+                    var valor = hoja.Cells[f, c].Value;
+                    if ((valor != null) && (valor.Equals(texto)))               
+                    {
+                        fila = f;
+                        column = c;
+                        trobat = true;
+                        break;
+                    }
+                }
+                if (trobat)
+                {
+                    break;
+                }
+            }
+
+            return (trobat);
+        }
+
+
+
+
 
     }
 }

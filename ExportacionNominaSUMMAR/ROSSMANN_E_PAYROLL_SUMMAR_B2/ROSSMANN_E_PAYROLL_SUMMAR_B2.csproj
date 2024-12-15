@@ -18,12 +18,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EPPlus" Version="7.1.2" />
-    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="ExcelDataReader" Version="3.7.0" />
     <PackageReference Include="FileHelpers" Version="3.5.2" />
-    <PackageReference Include="log4net" Version="2.0.17" />
+    <PackageReference Include="log4net" Version="3.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Renci.SshNet.Async" Version="1.4.0" />

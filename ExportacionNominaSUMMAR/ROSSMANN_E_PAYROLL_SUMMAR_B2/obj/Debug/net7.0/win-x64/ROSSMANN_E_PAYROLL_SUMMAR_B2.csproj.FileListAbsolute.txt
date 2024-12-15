@@ -7,11 +7,10 @@ C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSS
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\ROSSMANN_E_PAYROLL_SUMMAR_B2.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\ROSSMANN_E_PAYROLL_SUMMAR_B2.pdb
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\EPPlus.dll
-C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\EPPlus.Interfaces.dll
-C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\EPPlus.System.Drawing.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\ExcelDataReader.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\FileHelpers.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\log4net.dll
+C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.Extensions.Configuration.Binder.dll
@@ -23,7 +22,6 @@ C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSS
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.Extensions.Options.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.Extensions.Primitives.dll
-C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Microsoft.Win32.SystemEvents.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Newtonsoft.Json.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\Renci.SshNet.Async.dll
@@ -34,6 +32,7 @@ C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSS
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\System.Diagnostics.EventLog.Messages.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\System.Diagnostics.EventLog.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\System.Drawing.Common.dll
+C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\System.IO.Pipelines.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\System.Security.Cryptography.Pkcs.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Xavier\source\repositoris\clients\Rossmann\ExportacionNominaSUMMAR\ROSSMANN_E_PAYROLL_SUMMAR_B2\bin\Debug\net7.0\win-x64\System.Text.Encodings.Web.dll

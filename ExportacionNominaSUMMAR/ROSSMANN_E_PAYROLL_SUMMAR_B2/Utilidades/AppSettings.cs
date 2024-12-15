@@ -23,6 +23,9 @@ namespace CaptioB2it.Utilidades
         [JsonProperty("DirectorioFicherosEntrada")]
         public string DirectorioFicherosEntrada { get; set; }
 
+        [JsonProperty("DirectorioFicherosProcesados")]
+        public string DirectorioFicherosProcesados { get; set; }
+
         [JsonProperty("DirectorioFicherosSalida")]
         public string DirectorioFicherosSalida { get; set; }
 
