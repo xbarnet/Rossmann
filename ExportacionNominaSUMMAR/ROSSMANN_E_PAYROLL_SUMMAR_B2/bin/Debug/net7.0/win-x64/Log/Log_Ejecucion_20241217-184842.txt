@@ -1,0 +1,26 @@
+﻿2024-12-17 18:48:44,291 INFO  - [12/17/2024 6:48:42 PM]
+2024-12-17 18:48:44,300 INFO  - ***********************************************************************************
+2024-12-17 18:48:44,301 INFO  - ***********************************************************************************
+2024-12-17 18:48:44,301 INFO  - *********** INICIANDO EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR ***********
+2024-12-17 18:48:44,301 INFO  - ******** Inicio del proceso  : 12/17/2024 6:48:42 PM ********
+2024-12-17 18:48:44,301 INFO  - ***********************************************************************************
+2024-12-17 18:48:52,699 INFO  - Inicio del proceso de Actualización del fichero de SUMMAR de ROSSMANN : 12/17/2024 6:48:52 PM
+2024-12-17 18:48:52,708 INFO  - Fecha incicio de los Reports a procesar aprobados : 1/1/2024 3:58:48 PM  [2024-01-01T15:58:48.00Z]
+2024-12-17 18:48:52,708 INFO  - Fecha final de los Reports a procesar aprobados : 12/17/2024 5:48:41 PM  [2024-12-17T17:48:41.99Z]
+2024-12-17 18:48:56,372 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-12-17 18:48:56,373 INFO  - --> PROCESANDO REPORT : [1/5] : Informe prueba  [1161237]  [20240417-082404-158-62910]
+2024-12-17 18:48:58,627 INFO  - --> PROCESANDO REPORT : [2/5] : Informe Prueba Rossmann  [1228487]  [20240528-063650-671-71315]
+2024-12-17 18:49:00,394 INFO  - --> PROCESANDO REPORT : [3/5] : Informe Prueba Rossmann Dos  [1229738]  [20240528-160534-942-54250]
+2024-12-17 18:49:00,811 INFO  -  --> Reports del usuario [test1@b2it.es] añadidos a los ficheros de exportación
+2024-12-17 18:49:00,811 INFO  - PROCESANDO REPORTS DEL USUARIO : [raul.marco@rossmann.es] - [Raúl Marco Soler]
+2024-12-17 18:49:00,813 INFO  - --> PROCESANDO REPORT : [4/5] : Mayo 2024 Raúl Marco  [1185950]  [20240501-220723-795-04992]
+2024-12-17 18:49:01,312 INFO  - --> PROCESANDO REPORT : [5/5] : Junio Raúl Marco 2024  [1218956]  [20240521-123029-056-56935]
+2024-12-17 18:49:02,735 INFO  -  --> Reports del usuario [raul.marco@rossmann.es] añadidos a los ficheros de exportación
+2024-12-17 18:49:04,468 ERROR - FICHEROS NO ACTUALIZADOS.  NO HAY NINGUN FICHERO PARA ACTUALIZAR.
+2024-12-17 18:49:04,468 INFO  - ********************************************************************************************
+2024-12-17 18:49:04,469 ERROR - ******** Final del proceso : 12/17/2024 6:49:04 PM ********
+2024-12-17 18:49:04,469 ERROR - ***** FINALIZADO CON ERRORES EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR *****
+2024-12-17 18:49:04,469 INFO  - ********************************************************************************************
+2024-12-17 18:49:04,471 INFO  - ********************************************************************************************
+
+

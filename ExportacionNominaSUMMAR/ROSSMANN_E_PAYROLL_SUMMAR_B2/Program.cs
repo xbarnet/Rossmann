@@ -155,7 +155,7 @@ namespace E_ACCOUNT_B2
                 Log.Info("[" + program.fechaGeneracion.ToString() + "]");
                 Log.Info("***********************************************************************************");
                 Log.Info("***********************************************************************************");
-                Log.Info("*********** INICIANDO EL PROCESO DE EXPORTACION DE GASTOS ***********");
+                Log.Info("*********** INICIANDO EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR ***********");
                 Log.Info("******** Inicio del proceso  : " + program.fechaGeneracion.ToString() + " ********");
                 Log.Info("***********************************************************************************");
 
@@ -176,7 +176,7 @@ namespace E_ACCOUNT_B2
                     // Log
                     Log.Info("***********************************************************************************************");
                     Log.Info("******** Final del proceso : " + DateTime.Now.ToString() + "********");
-                    Log.Info("***** FINALIZADO CORRECTAMENTE EL PROCESO DE EXPORTACION DE CONTABILIDAD *****");
+                    Log.Info("***** FINALIZADO CORRECTAMENTE EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR *****");
                     Log.Info("***********************************************************************************************");
                     Log.Info("************************************************************************************************\r\n\n");
                 }
@@ -185,7 +185,7 @@ namespace E_ACCOUNT_B2
                     // Log
                     Log.Info("********************************************************************************************");
                     Log.Error("******** Final del proceso : " + DateTime.Now.ToString() + " ********");
-                    Log.Error("***** FINALIZADO CON ERRORES EL PROCESO DE EXPORTACION DE GASTOS *****");
+                    Log.Error("***** FINALIZADO CON ERRORES EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR *****");
                     Log.Info("********************************************************************************************");
                     Log.Info("********************************************************************************************\r\n\n");
                 }
@@ -198,7 +198,7 @@ namespace E_ACCOUNT_B2
                 Log.Error(ex.StackTrace);
                 Log.Info("********************************************************************************************");
                 Log.Error("******** Final del proceso : " + DateTime.Now.ToString() + "********");
-                Log.Error("***** FINALIZADO CON ERROR EL PROCESO DE EXPORTACION DE GASTOS *****");
+                Log.Error("***** FINALIZADO CON ERROR EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR *****");
                 Log.Info("********************************************************************************************");
                 Log.Info("********************************************************************************************\r\n\n");
                 // Log Mail
@@ -381,11 +381,19 @@ namespace E_ACCOUNT_B2
                 {
                     // Processem tots els fitxers pendents del directori
                     DirectoryInfo dirinfo = new DirectoryInfo(appSettings.DirectorioFicherosEntrada);
+                    bool hayFicherosParaProcesar = false;
                     foreach (var fitxer in dirinfo.GetFiles())
                     {
                         string nomFitxerExcel = fitxer.FullName;
                         nombreFichero_salida = Path.Combine(appSettings.DirectorioFicherosSalida, fitxer.Name + "_" + fechaInicioExport.ToString("yyyyMMddTHHmmss") + "-" + fechaFinExport.ToString("yyyyMMddTHHmmss")) + "." + fitxer.Extension;
                         ProcesarFichero_SUMMAR(nomFitxerExcel, nombreFichero_salida, appSettings.DirectorioFicherosProcesados, exportDATA, fechaInicioExport.ToString("dd/MM/yyyy"), fechaFinExport.ToString("dd/MM/yyyy"));
+                        hayFicherosParaProcesar = true;
+                    }
+
+                    if (!hayFicherosParaProcesar)
+                    {
+                        error = true;
+                        Log.Error("FICHEROS NO ACTUALIZADOS.  NO HAY NINGUN FICHERO PARA ACTUALIZAR.");
                     }
 
                     ////// 
@@ -1143,20 +1151,20 @@ namespace E_ACCOUNT_B2
 
                 int fila_fechaInicial = 0;
                 int columna_fechaInicial = 0;
-                if (!BuscarTexto_HojaExcel("Fecha inicial", ws, ref fila_fechaInicial, ref columna_fechaInicial))
+                if (!BuscarTexto_HojaExcel("Fecha inicial ejecución", ws, ref fila_fechaInicial, ref columna_fechaInicial))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha inicial]");
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha inicial ejecución]");
                     error = true;
                     return (error);
                 }
 
                 int fila_fechaFinal = 0;
                 int columna_fechaFinal = 0;
-                if (!BuscarTexto_HojaExcel("Fecha final", ws, ref fila_fechaFinal, ref columna_fechaFinal))
+                if (!BuscarTexto_HojaExcel("Fecha final ejecución", ws, ref fila_fechaFinal, ref columna_fechaFinal))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha final]");
+                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha final ejecución]");
                     error = true;
                     return (error);
                 }

@@ -1,0 +1,25 @@
+﻿2024-12-17 18:10:38,496 INFO  - [12/17/2024 6:10:33 PM]
+2024-12-17 18:10:38,517 INFO  - ***********************************************************************************
+2024-12-17 18:10:38,529 INFO  - ***********************************************************************************
+2024-12-17 18:10:38,532 INFO  - *********** INICIANDO EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR ***********
+2024-12-17 18:10:38,532 INFO  - ******** Inicio del proceso  : 12/17/2024 6:10:33 PM ********
+2024-12-17 18:10:38,534 INFO  - ***********************************************************************************
+2024-12-17 18:10:44,531 INFO  - Inicio del proceso de Actualización del fichero de SUMMAR de ROSSMANN : 12/17/2024 6:10:44 PM
+2024-12-17 18:10:44,543 INFO  - Fecha incicio de los Reports a procesar aprobados : 1/1/2024 3:58:48 PM  [2024-01-01T15:58:48.00Z]
+2024-12-17 18:10:44,543 INFO  - Fecha final de los Reports a procesar aprobados : 12/17/2024 5:10:32 PM  [2024-12-17T17:10:32.99Z]
+2024-12-17 18:10:46,381 INFO  - PROCESANDO REPORTS DEL USUARIO : [test1@b2it.es] - [Usuario Test]
+2024-12-17 18:10:46,386 INFO  - --> PROCESANDO REPORT : [1/5] : Informe prueba  [1161237]  [20240417-082404-158-62910]
+2024-12-17 18:10:50,084 INFO  - --> PROCESANDO REPORT : [2/5] : Informe Prueba Rossmann  [1228487]  [20240528-063650-671-71315]
+2024-12-17 18:10:50,473 INFO  - --> PROCESANDO REPORT : [3/5] : Informe Prueba Rossmann Dos  [1229738]  [20240528-160534-942-54250]
+2024-12-17 18:10:51,204 INFO  -  --> Reports del usuario [test1@b2it.es] añadidos a los ficheros de exportación
+2024-12-17 18:10:51,205 INFO  - PROCESANDO REPORTS DEL USUARIO : [raul.marco@rossmann.es] - [Raúl Marco Soler]
+2024-12-17 18:10:51,206 INFO  - --> PROCESANDO REPORT : [4/5] : Mayo 2024 Raúl Marco  [1185950]  [20240501-220723-795-04992]
+2024-12-17 18:10:51,942 INFO  - --> PROCESANDO REPORT : [5/5] : Junio Raúl Marco 2024  [1218956]  [20240521-123029-056-56935]
+2024-12-17 18:10:52,646 INFO  -  --> Reports del usuario [raul.marco@rossmann.es] añadidos a los ficheros de exportación
+2024-12-17 18:10:59,268 INFO  - ***********************************************************************************************
+2024-12-17 18:10:59,268 INFO  - ******** Final del proceso : 12/17/2024 6:10:59 PM********
+2024-12-17 18:10:59,269 INFO  - ***** FINALIZADO CORRECTAMENTE EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR *****
+2024-12-17 18:10:59,270 INFO  - ***********************************************************************************************
+2024-12-17 18:10:59,270 INFO  - ************************************************************************************************
+
+
