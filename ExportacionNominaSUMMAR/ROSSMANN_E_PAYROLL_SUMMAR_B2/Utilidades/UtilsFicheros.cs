@@ -551,6 +551,20 @@ namespace CaptioB2it.Utilidades
             }
         }
 
+        public string NameWithoutExtension(FileInfo file)
+        {
+            string nom = file.Name;
+            string extensio = file.Extension;
+            string result = nom;
+
+            if (nom.Contains(extensio))
+            {
+                result = nom.Replace(extensio, "");
+            }
+            return (result);
+
+        }
+
     }
 }
 

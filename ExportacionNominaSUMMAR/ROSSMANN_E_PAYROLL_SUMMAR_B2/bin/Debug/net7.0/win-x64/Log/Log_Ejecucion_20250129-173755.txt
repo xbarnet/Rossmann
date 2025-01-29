@@ -1,0 +1,18 @@
+﻿2025-01-29 17:37:59,161 INFO  - [1/29/2025 5:37:55 PM]
+2025-01-29 17:37:59,176 INFO  - ***********************************************************************************
+2025-01-29 17:37:59,183 INFO  - ***********************************************************************************
+2025-01-29 17:37:59,183 INFO  - *********** INICIANDO EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR ***********
+2025-01-29 17:37:59,183 INFO  - ******** Inicio del proceso  : 1/29/2025 5:37:55 PM ********
+2025-01-29 17:37:59,183 INFO  - ***********************************************************************************
+2025-01-29 17:38:02,528 INFO  - Inicio del proceso de Actualización del fichero de SUMMAR de ROSSMANN : 1/29/2025 5:38:02 PM
+2025-01-29 17:38:02,540 INFO  - Fecha incicio de los Reports a procesar aprobados : 1/27/2025 9:11:23 AM  [2025-01-27T09:11:23.00Z]
+2025-01-29 17:38:02,541 INFO  - Fecha final de los Reports a procesar aprobados : 1/29/2025 4:37:54 PM  [2025-01-29T16:37:54.99Z]
+2025-01-29 17:38:03,546 INFO  - PROCESANDO REPORTS DEL USUARIO : [daniel.casado@rossmann.es] - [Daniel Casado Lara]
+2025-01-29 17:38:03,547 INFO  - --> PROCESANDO REPORT : [1/3] : Enero Daniel Casado  [1634095]  [20250127-092942-112-20618]
+2025-01-29 17:38:05,715 INFO  -  --> Reports del usuario [daniel.casado@rossmann.es] añadidos a los ficheros de exportación
+2025-01-29 17:38:05,715 INFO  - PROCESANDO REPORTS DEL USUARIO : [stefan.frings@rossmann.es] - [Stefan Frings]
+2025-01-29 17:38:05,716 INFO  - --> PROCESANDO REPORT : [2/3] : Enero 25  [1634123]  [20250127-093938-091-85623]
+2025-01-29 17:38:06,041 INFO  -  --> Reports del usuario [stefan.frings@rossmann.es] añadidos a los ficheros de exportación
+2025-01-29 17:38:06,041 INFO  - PROCESANDO REPORTS DEL USUARIO : [avelino.pelaez@rossmann.es] - [Avelino Peláez Mendez]
+2025-01-29 17:38:06,042 INFO  - --> PROCESANDO REPORT : [3/3] : Gastos enero Avelino   [1634332]  [20250127-104924-295-04523]
+2025-01-29 17:38:07,767 INFO  -  --> Reports del usuario [avelino.pelaez@rossmann.es] añadidos a los ficheros de exportación

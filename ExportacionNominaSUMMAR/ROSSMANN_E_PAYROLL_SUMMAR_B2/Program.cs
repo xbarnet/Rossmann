@@ -385,8 +385,8 @@ namespace E_ACCOUNT_B2
                     foreach (var fitxer in dirinfo.GetFiles())
                     {
                         string nomFitxerExcel = fitxer.FullName;
-                        nombreFichero_salida = Path.Combine(appSettings.DirectorioFicherosSalida, fitxer.Name + "_" + fechaInicioExport.ToString("yyyyMMddTHHmmss") + "-" + fechaFinExport.ToString("yyyyMMddTHHmmss")) + "." + fitxer.Extension;
-                        ProcesarFichero_SUMMAR(nomFitxerExcel, nombreFichero_salida, appSettings.DirectorioFicherosProcesados, exportDATA, fechaInicioExport.ToString("dd/MM/yyyy"), fechaFinExport.ToString("dd/MM/yyyy"));
+                        nombreFichero_salida = Path.Combine(appSettings.DirectorioFicherosSalida, utils_fitxers.NameWithoutExtension(fitxer) + "_" + fechaInicioExport.ToString("yyyyMMddTHHmmss") + "-" + fechaFinExport.ToString("yyyyMMddTHHmmss")) + fitxer.Extension;
+                        error = ProcesarFichero_SUMMAR(nomFitxerExcel, nombreFichero_salida, appSettings.DirectorioFicherosProcesados, exportDATA, fechaInicioExport.ToString("dd/MM/yyyy"), fechaFinExport.ToString("dd/MM/yyyy"));
                         hayFicherosParaProcesar = true;
                     }
 
@@ -946,8 +946,8 @@ namespace E_ACCOUNT_B2
             //fechaFinExport = new DateTime(fechaGeneracionUTC.Year, fechaGeneracionUTC.Month, fechaGeneracionUTC.Day - 1, 23, 59, 59);
 
             //// BORRAR XAVIER
-            //fechaInicioExport = new DateTime(2024, 02, 06, 11, 58, 52);
-            //fechaFinExport = new DateTime(2024, 02, 21, 08, 12, 15);
+            //fechaInicioExport = new DateTime(2025, 01, 27, 14, 17, 52);
+            //fechaFinExport = new DateTime(2025, 01, 28, 11, 50, 06);
             //// FI BORRAR XAVIER
 
             fechaInicioExport_txt = fechaInicioExport.ToString("yyyy-MM-ddTHH:mm:ss" + ".00Z");
@@ -1134,7 +1134,7 @@ namespace E_ACCOUNT_B2
                 if (!BuscarTexto_HojaExcel("Código", ws, ref fila_codigoUsuarioSummar, ref columna_codigoUsuarioSummar))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Código]");
+                    Log.Error("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Código]");
                     error = true;
                     return (error);
                 }
@@ -1144,7 +1144,7 @@ namespace E_ACCOUNT_B2
                 if (!BuscarTexto_HojaExcel("Nombre", ws, ref fila_nombreUsuarioSummar, ref columna_nombreUsuarioSummar))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Nombre]");
+                    Log.Error("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Nombre]");
                     error = true;
                     return (error);
                 }
@@ -1154,7 +1154,7 @@ namespace E_ACCOUNT_B2
                 if (!BuscarTexto_HojaExcel("Fecha inicial ejecución", ws, ref fila_fechaInicial, ref columna_fechaInicial))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha inicial ejecución]");
+                    Log.Error("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha inicial ejecución]");
                     error = true;
                     return (error);
                 }
@@ -1164,7 +1164,7 @@ namespace E_ACCOUNT_B2
                 if (!BuscarTexto_HojaExcel("Fecha final ejecución", ws, ref fila_fechaFinal, ref columna_fechaFinal))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha final ejecución]");
+                    Log.Error("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [Fecha final ejecución]");
                     error = true;
                     return (error);
                 }
@@ -1176,7 +1176,7 @@ namespace E_ACCOUNT_B2
                 if (!((BuscarTexto_HojaExcel("K253", ws, ref fila_aux, ref columna_aux)) && ((BuscarTexto_HojaExcel("DIETA FORZADA", ws, ref fila_dietaForzada, ref columna_dietaForzada)) && (fila_dietaForzada == (fila_aux+1)) && (columna_dietaForzada == columna_aux))))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K253 - DIETA FORZADA]");
+                    Log.Error("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K253 - DIETA FORZADA]");
                     error = true;
                     return (error);
                 }
@@ -1188,7 +1188,7 @@ namespace E_ACCOUNT_B2
                 if (!((BuscarTexto_HojaExcel("K270", ws, ref fila_aux, ref columna_aux)) && ((BuscarTexto_HojaExcel("Nº KILOMETROS", ws, ref fila_numKilometros, ref columna_numKilometros)) && (fila_numKilometros == (fila_aux + 1)) && (columna_numKilometros == columna_aux))))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K270 - Nº KILOMETROS]");
+                    Log.Error("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K270 - Nº KILOMETROS]");
                     error = true;
                     return (error);
                 }
@@ -1200,7 +1200,7 @@ namespace E_ACCOUNT_B2
                 if (!((BuscarTexto_HojaExcel("K888", ws, ref fila_aux, ref columna_aux)) && ((BuscarTexto_HojaExcel("IMPORTE GASTOS DE EMPRESA", ws, ref fila_importeGastosEmpresa, ref columna_importeGastosEmpresa)) && (fila_importeGastosEmpresa == (fila_aux + 1)) && (columna_importeGastosEmpresa == columna_aux))))
                 {
                     // Log
-                    Log.Info("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K888 - IMPORTE GASTOS DE EMPRESA]");
+                    Log.Error("Error en el fichero [" + Path.GetFileName(ficheroInicial) + "].  No existe la columna [K888 - IMPORTE GASTOS DE EMPRESA]");
                     error = true;
                     return (error);
                 }

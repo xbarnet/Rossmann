@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ROSSMANN_E_PAYROLL_SUMMAR_B2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b802a6c12d775ae70a0c2ab6e6645f5f998c131")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f72c337e607240f4360598e26f5e9a6cdd6b0998")]
 [assembly: System.Reflection.AssemblyProductAttribute("ROSSMANN_E_PAYROLL_SUMMAR_B2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ROSSMANN_E_PAYROLL_SUMMAR_B2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,26 @@
+﻿2025-01-29 17:27:58,232 INFO  - [1/29/2025 5:27:55 PM]
+2025-01-29 17:27:58,245 INFO  - ***********************************************************************************
+2025-01-29 17:27:58,248 INFO  - ***********************************************************************************
+2025-01-29 17:27:58,248 INFO  - *********** INICIANDO EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR ***********
+2025-01-29 17:27:58,248 INFO  - ******** Inicio del proceso  : 1/29/2025 5:27:55 PM ********
+2025-01-29 17:27:58,248 INFO  - ***********************************************************************************
+2025-01-29 17:28:07,375 INFO  - Inicio del proceso de Actualización del fichero de SUMMAR de ROSSMANN : 1/29/2025 5:28:07 PM
+2025-01-29 17:28:07,400 INFO  - Fecha incicio de los Reports a procesar aprobados : 1/27/2025 9:11:23 AM  [2025-01-27T09:11:23.00Z]
+2025-01-29 17:28:07,400 INFO  - Fecha final de los Reports a procesar aprobados : 1/29/2025 4:27:54 PM  [2025-01-29T16:27:54.99Z]
+2025-01-29 17:28:08,358 INFO  - PROCESANDO REPORTS DEL USUARIO : [daniel.casado@rossmann.es] - [Daniel Casado Lara]
+2025-01-29 17:28:08,359 INFO  - --> PROCESANDO REPORT : [1/3] : Enero Daniel Casado  [1634095]  [20250127-092942-112-20618]
+2025-01-29 17:28:10,327 INFO  -  --> Reports del usuario [daniel.casado@rossmann.es] añadidos a los ficheros de exportación
+2025-01-29 17:28:10,327 INFO  - PROCESANDO REPORTS DEL USUARIO : [stefan.frings@rossmann.es] - [Stefan Frings]
+2025-01-29 17:28:10,328 INFO  - --> PROCESANDO REPORT : [2/3] : Enero 25  [1634123]  [20250127-093938-091-85623]
+2025-01-29 17:28:10,654 INFO  -  --> Reports del usuario [stefan.frings@rossmann.es] añadidos a los ficheros de exportación
+2025-01-29 17:28:10,654 INFO  - PROCESANDO REPORTS DEL USUARIO : [avelino.pelaez@rossmann.es] - [Avelino Peláez Mendez]
+2025-01-29 17:28:10,655 INFO  - --> PROCESANDO REPORT : [3/3] : Gastos enero Avelino   [1634332]  [20250127-104924-295-04523]
+2025-01-29 17:28:11,018 INFO  -  --> Reports del usuario [avelino.pelaez@rossmann.es] añadidos a los ficheros de exportación
+2025-01-29 17:28:18,896 INFO  - Error en el fichero [enero 2025 test.xlsx].  No existe la columna [Fecha inicial ejecución]
+2025-01-29 17:28:18,902 INFO  - ********************************************************************************************
+2025-01-29 17:28:18,902 ERROR - ******** Final del proceso : 1/29/2025 5:28:18 PM ********
+2025-01-29 17:28:18,903 ERROR - ***** FINALIZADO CON ERRORES EL PROCESO DE ACTUALIZACION DE DATOS DE SUMMAR *****
+2025-01-29 17:28:18,903 INFO  - ********************************************************************************************
+2025-01-29 17:28:18,903 INFO  - ********************************************************************************************
+
+
